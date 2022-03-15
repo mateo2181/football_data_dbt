@@ -25,4 +25,16 @@ models:
         description: "League where player finish his career"
       - name: year
         description: "Year of retirenment"
+  - name: club_max_transfers_by_year
+    description: "Clubs that more money spent in transfers by year"
+    columns:
+      - name: year
+        description: "Year"
+        tests:
+          - unique
+          - not_null
+      - name: club
+        description: "Club that spent more money that year"
+      - name: total
+        description: "Total in millions of pounds (£)"
 
