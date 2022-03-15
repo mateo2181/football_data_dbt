@@ -20,4 +20,4 @@ select
     year as year,
     club_name as club,
     CAST(total as decimal) as total,
-from groupsByYear;
+from groupsByYear
