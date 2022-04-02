@@ -4,8 +4,8 @@ version: 2
 sources:
     - name: staging
       #For bigquery:
-      database: zoomcamp-340819
-      schema: football_data_staging
+      database: "{{ env_var('GCP_PROJECT_ID') }}"
+      schema: "{{ env_var('GCP_BIGQUERY_DATASET') }}"
       # loaded_at_field: record_loaded_at
       tables:
         - name: transfers
